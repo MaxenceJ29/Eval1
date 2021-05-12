@@ -47,13 +47,20 @@ body > div.container.position-relative > div > div.btn-group-vertical{
     width: 50px;
 }
 
-
+hr.style-four {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 2px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
 .adoptions{
     text-align: center;
-    margin-top: 20rem;
-    font-family: 'Dancing Script', cursive;
+    margin-top: 80px;
+    font-family: 'Amatic SC', cursive;
     font-size: 40px;
-    text-decoration-line: underline;
     color: rgb(233,118,36);
 }
 
@@ -154,7 +161,15 @@ ul{
 
 
 /* PAGE 2 */
-
+.important{
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+.left{
+    text-align: left;
+    padding-bottom: 20px;
+}
 .carouselimg{
 
     width: 500px;
@@ -163,9 +178,297 @@ ul{
 
 .refuge{
     text-align: center;
-    margin-top: 50px;
-    font-family: 'Dancing Script', cursive;
+  
+    font-family: 'Amatic SC', cursive;
     font-size: 40px;
-    text-decoration-line: underline;
     color: rgb(233,118,36);
 }
+h4{
+    
+    text-align: center;
+    font-family: 'Girassol', cursive;
+    color: rgb(233,118,36);
+}
+html body nav.navbar.navbar-expand-lg.navbar-light.bg-light div.container-fluid a.navbar-brand{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(233,118,36);
+    
+}
+
+
+/* MEDIA QUERIES */
+/* Si ça fait beug le reste c'est celui là qu'il faut enlever */
+@media screen and (min-width: 990px) {
+     /* Img Draw Dog Size */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-absolute.top-100.start-50.translate-middle.dog img.rounded-circle.draw {
+        height: 300px;
+        width: 300px;
+    }
+    /* Div Dog Position */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-absolute.top-100.start-50.translate-middle.dog {
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-relative.intro{
+        height: auto;
+        width: auto;
+    }
+    /* NE MARCHE PAS Font Size P Gestion */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-relative.intro p{
+        
+        text-align: center;
+        font-size: 28px;
+    }
+    /* FONT SIZE TITRES H3 */
+    .adoptions {
+        font-size: 4rem;
+    }
+    h3{
+        text-align: right;
+        font-size: 2rem;
+    }
+    .special{
+        text-align: left;
+        font-size: 2rem;
+    }
+    /* IMG SIZE FUEGO STARDUST PLUME  */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-fuego article.get img.position-relative.float-start.rounded-circle.z-depth-2{
+        height: 350px;
+        width: 350px; 
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special img.position-relative.float-end.rounded-circle.z-depth-2{
+        height: 350px;
+        width: 350px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.cards article.get img.position-relative.float-start.rounded-circle.z-depth-2{
+        height: 350px;
+        width: 350px;
+    }
+    /* SIZE CONTAINER CARD STARDUST */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special {
+        height: 640px;
+    }  
+    /* MARGIN TOP TITLE REFUGE EVENT */
+    .refuge{
+        margin-top: 50px;
+    }
+    /* INNER CAROUSEL CONTENT SIZE */
+    html body div#carouselExampleDark.carousel.carousel-dark.slide.pointer-event div.carousel-inner{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        height: 550px;
+    }
+    html body div.container div.shadow.p-3.mb-5.bg-body.important p.left{
+        text-align: center;
+        font-size: 20px;
+    }
+    html body div.container.important div.shadow.p-3.mb-5.bg-body.important div p.text-center{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    /* Google Map Widget */
+    html body footer div.container-fluid.p-3.mb-2.bg-dark.bg-gradient.text-white div.float-start iframe{
+        display: none;
+    }
+    /* Contact Us Widget */
+    html body footer div.container-fluid.p-3.mb-2.bg-dark.bg-gradient.text-white div.mb-3.float-start {
+        display: none;
+    }
+    /* UL Coordinates Padding */
+    html body footer div.container-fluid.p-3.mb-2.bg-dark.bg-gradient.text-white div.float-start.coordinates ul{
+        padding-left: 0px;
+    }
+    /* Social Networks Vertical Btns */
+    html body footer div.container-fluid.p-3.mb-2.bg-dark.bg-gradient.text-white div.btn-group-vertical.float-end{  
+    }
+    /* Font Size P Gestion */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-relative.intro p{
+        margin-top: 0px;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-fuego article.get p{
+        text-align: right;
+        font-size: 19px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special p.special{
+        text-align: left;
+        font-size: 18px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.cards article.get p{
+        text-align: right;
+        font-size: 19px;
+    }
+    /* HEIGHT CARDS GESTION */
+    .card-fuego{
+        height: 570px;
+    }
+    .card-special{
+        height: 720px;
+    }
+    .cards{
+        height: 600px;
+    }
+    /* MARGIN TOP TITLE REFUGE EVENT */
+    .refuge{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    
+     /* Contact Us Widget */
+     html body footer div.container-fluid.p-3.mb-2.bg-dark.bg-gradient.text-white div.mb-3.float-start {
+        display: none;
+    }
+    /* Font Size P Gestion */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-relative.intro p{
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 19px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-fuego article.get p{
+        text-align: right;
+        font-size: 19px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special p.special{
+        text-align: left;
+        font-size: 18px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.cards article.get p{
+        text-align: right;
+        font-size: 19px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    html body footer div.container-fluid.p-3.mb-2.bg-dark.bg-gradient.text-white{
+        height: 178px;
+    }
+
+    /* Social Networks Btns */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.btn-group-vertical{
+        display: none;
+    }
+    /* Div Dog Position */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-absolute.top-100.start-50.translate-middle.dog{
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+    }
+    /* Size Draw Img */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-absolute.top-100.start-50.translate-middle.dog img.rounded-circle.draw{
+        height: 180px;
+        width: 180px;
+    }
+    /* Font Size P Gestion */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-relative.intro p{
+        margin-top: 0px;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-fuego article.get p{
+        text-align: right;
+        font-size: 16px;
+    }
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special p.special{
+        text-align: left;
+        font-size: 16px;
+    }
+    
+
+@media only screen and (max-width: 319px) {
+
+    /* Div Dog Position */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-absolute.top-100.start-50.translate-middle.dog{
+            display: none;
+    }
+
+    /* Size Draw Img */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card div.position-absolute.top-100.start-50.translate-middle.dog img.rounded-circle.draw{
+        height: 150px;
+        width: 150px;
+    }
+    /* P Size Stardust Special */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special p.special{
+        font-size: 18px;
+        
+    }
+    /* Size Img Fuego */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-fuego article.get img.position-relative.float-start.rounded-circle.z-depth-2{
+        height: 130px;
+        width: 130px;
+    }
+    /* Size Img Stardust */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special img.position-relative.float-end.rounded-circle.z-depth-2{
+        height: 130px;
+        width: 130px;
+    }
+    /* Size Img Plume */
+    html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.cards article.get img.position-relative.float-start.rounded-circle.z-depth-2{
+        height: 130px;
+        width: 130px;
+    }
+    /* MarginTop H1 Refuge Page 2 */
+    html body h1.refuge{
+        margin-top: 4rem;
+    }
+    /* HR Margin */
+    html body hr.style-four{
+        margin-top: 100px;
+    }
+    .card-fuego{
+        height: 550px;
+    }
+    .card-special{
+        height: 840px;
+    }
+    .cards{
+        height: 650px;
+    }
+    
+
+}
+@media only screen and (min-width: 319px) {
+
+
+/* Size Img Fuego */
+html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-fuego article.get img.position-relative.float-start.rounded-circle.z-depth-2{
+    height: 160px;
+    width: 160px;
+}
+/* Size Img Stardust */
+html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.card-special article.get-special img.position-relative.float-end.rounded-circle.z-depth-2{
+    height: 160px;
+    width: 160px;
+}
+/* Size Img Plume */
+html body div.container.position-relative div.shadow.p-3.mb-5.bg-body.rounded.cards article.get img.position-relative.float-start.rounded-circle.z-depth-2{
+    height: 160px;
+    width: 160px;
+}
+.card-fuego{
+    height: 550px;
+}
+.card-special{
+    height: 780px;
+}
+.cards{
+    height: 720px;
+}
+}
+
